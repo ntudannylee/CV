@@ -1,0 +1,76 @@
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col" style="margin-top: 30px;">
+                <h1>新增資料</h1>
+                <hr>
+            </div>
+        </div>
+
+        <!-- 資料欄位 -->
+        <div class="row">
+            <div class="col">
+                <div class="form-group row">
+                    <label for="inputProductName" class="col-sm-2 col-form-label">商品名稱</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputProductName" placeholder="請輸入商品名稱" value="米家自動感應洗手機">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputProductPrice" class="col-sm-2 col-form-label">商品價格</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputProductPrice" placeholder="請輸入商品價格" value="395">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputProductCount" class="col-sm-2 col-form-label">商品數量</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputProductCount" placeholder="請輸入商品數量" value="10">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputProductImage" class="col-sm-2 col-form-label">圖片網址</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputProductImage" placeholder="請輸入商品圖片網址" value="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1542426682.20729915.png">
+                    </div>
+                </div>
+
+                <!-- 工具列 -->
+                <div class="container">
+                    <div class="form-group row">
+                        <div class="col">
+                            <button id="insert" type="button" class="btn btn-primary" style="float: right;">新增</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="dialog" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">系統訊息</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <p id="message">要顯示的訊息</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入我們自己寫的 JavaScript -->
+    <script src="./js/insert.js"></script>
+</body>
